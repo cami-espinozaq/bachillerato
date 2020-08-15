@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo h1 {
+    color: #484848;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    animation: lightning 1.2s linear infinite;
+    font-family: 'Monoton';
+}
+
+@keyframes lightning {
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+}
