@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
-import { Grid } from '@material-ui/core';
-import Logo from './components/Logo';
+import { InitLogo } from './components/Logo';
+import Menu from './components/Menu';
 import 'fontsource-roboto';
 
 function App() {
-  return (
-    <Grid container className="app-grid-row">
-      <Grid item xs={12}>
-        <Logo />
-      </Grid>
-    </Grid>
-  );
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const renderMain = () => { setIsLoading(false); }
+    const fakeLoading = () => setTimeout(renderMain, 4000);
+
+    fakeLoading();
+  }, [])
+
+  return isLoading ? <InitLogo /> : <Menu />;
 }
 
 export default App;

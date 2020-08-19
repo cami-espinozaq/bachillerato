@@ -19,11 +19,16 @@ code {
 }
 
 @font-face {
-  font-family: 'Gugi-Regular';
+  font-family: 'Gugi';
   src: url(./assets/fonts/Gugi-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Monoton';
   src: url(./assets/fonts/Monoton-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'NixieOne';
+  src: url(./assets/fonts/NixieOne-Regular.ttf);
 }
