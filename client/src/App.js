@@ -3,6 +3,8 @@ import './App.css';
 import { InitLogo } from './components/Logo';
 import Menu from './components/Menu';
 import 'fontsource-roboto';
+import Instructions from './components/Instructions';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +16,15 @@ function App() {
     fakeLoading();
   }, [])
 
-  return isLoading ? <InitLogo /> : <Menu />;
+  const routes = (
+    <Switch>
+      <Route path="/instructions" component={Instructions} />
+      <Route path="/" exact component={Menu}/>
+      <Redirect to="/" />
+    </Switch>
+  );
+
+  return isLoading ? <InitLogo /> : routes;
 }
 
 export default App;

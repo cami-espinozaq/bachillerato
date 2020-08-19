@@ -1,7 +1,5 @@
 .app-grid-row {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {

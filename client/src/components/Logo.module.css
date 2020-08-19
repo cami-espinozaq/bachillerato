@@ -16,10 +16,10 @@
 }
 
 .loading {
-    color: #fff900;
+    color: #FFD70D;
     letter-spacing: 2px;
     font-family: 'NixieOne' !important;
-    text-shadow: 0 0 5px #fff900, 0 0 10px #ff6c00;
+    text-shadow: 0 0 5px #FFD70D, 0 0 10px #ff6c00;
 }
 
 .loading span {
@@ -49,15 +49,15 @@
     }
 
     100% {
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+        color: #FFD70D;
+        text-shadow: 0 0 7px #FFD70D, 0 0 50px #ff6c00;
     }
 }
 
 @keyframes loading {
     10% {
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+        color: #FFD70D;
+        text-shadow: 0 0 7px #FFD70D, 0 0 50px #ff6c00;
     }
 
     20% {

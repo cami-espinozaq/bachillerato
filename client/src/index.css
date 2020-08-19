@@ -4,9 +4,7 @@ html, body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'NixieOne', 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
@@ -16,6 +14,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @font-face {
@@ -31,4 +34,9 @@ code {
 @font-face {
   font-family: 'NixieOne';
   src: url(./assets/fonts/NixieOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
 }
