@@ -1,28 +1,28 @@
-.logoWrapper {
-    margin: 0.5rem 0.8rem;
-}
-
 .block {
     border: 1px solid white;
     border-radius: 4px;
 }
 
+.block legend {
+    padding: 0 4px;
+}
+
 .blockCyan {
     border-color: #9EF0FF;
+    color: #9EF0FF;
 }
 
 .blockPurple {
     border-color: #664BE8;
+    color: #664BE8;
 }
 
-.blocFuccia {
+.blockFuccia {
     border-color: #FF0099;
+    color: #FF0099;
 }
 
-.blocOrange {
+.blockOrange {
     border-color: #E8742B;
-}
-
-.mainGrid {
-    margin: 2rem;
+    color: #E8742B;
 }

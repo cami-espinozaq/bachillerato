@@ -1,7 +1,3 @@
-.app-grid-row {
-  height: 100vh;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -29,5 +25,31 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens */
+
+.app-wrap {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1023px) {
+  .app-wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app-wrap {
+    width: 100%;
   }
 }

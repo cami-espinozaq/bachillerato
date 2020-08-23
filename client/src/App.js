@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import { InitLogo } from './components/Logo';
+import { InitLogo } from './UI/Logo';
 import Menu from './components/Menu';
 import 'fontsource-roboto';
 import Instructions from './components/Instructions';
+import Settings from './components/Settings';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
   const routes = (
     <Switch>
       <Route path="/instructions" component={Instructions} />
-      <Route path="/" exact component={Menu}/>
+      <Route path="/settings" component={Settings} />
+      <Route path="/" exact component={Menu} />
       <Redirect to="/" />
     </Switch>
   );
