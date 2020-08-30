@@ -1,12 +1,15 @@
 import React from 'react';
-import Wrapper from '../UI/Wrapper';
-
+import { MenuWrapper } from './Menu';
 
 const settings = props => {
+
+    const linkList = [
+        {route: "/categories", name: "Choose categories"},
+        {route: "/timer", name: "Timer"},
+    ]
+
     return (
-        <Wrapper>
-            
-        </Wrapper>
+        <MenuWrapper links={linkList} />
     );
 }
 

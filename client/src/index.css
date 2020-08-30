@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: 'NixieOne', 'Montserrat';
+  font-family: 'Warnes', 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
@@ -39,4 +39,9 @@ a {
 @font-face {
   font-family: 'Montserrat';
   src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Warnes';
+  src: url(./assets/fonts/Warnes-Regular.ttf);
 }

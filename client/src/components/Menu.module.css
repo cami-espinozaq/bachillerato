@@ -1,7 +1,6 @@
 .menuItem {
     color: #FFD70D;
     letter-spacing: 2px;
-    font-family: 'NixieOne' !important;
     text-shadow: 0 0 5px #FFD70D, 0 0 10px #ff6c00;
     padding: 24px 0;
 }

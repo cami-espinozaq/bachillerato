@@ -34,7 +34,7 @@
 1025px — 1200px: Desktops, large screens */
 
 .app-wrap {
-  width: 50%;
+  width: 55%;
   margin: auto;
   display: flex;
   flex-flow: column;

@@ -1,0 +1,36 @@
+.block {
+    width: 300px;
+    height: 120px;
+    border: mediumblue 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 0 15px mediumblue;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.image {
+    height: 200%;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.blockCyan {
+    border-color: #9EF0FF;
+    color: #9EF0FF;
+}
+
+.blockPurple {
+    border-color: #664BE8;
+    color: #664BE8;
+}
+
+.blockFuccia {
+    border-color: #FF0099;
+    color: #FF0099;
+}
+
+.blockOrange {
+    border-color: #E8742B;
+    color: #E8742B;
+}

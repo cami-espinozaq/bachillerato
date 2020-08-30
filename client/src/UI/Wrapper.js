@@ -4,10 +4,13 @@ import classes from './Wrapper.module.css';
 import { NavLink } from 'react-router-dom';
 
 const wrapper = props => {
+
+    const returnLink = props.logoLink || "/";
+
     return (
         <div class="app-wrap">
             <div className={classes.logoWrapper}>
-                <NavLink to="/">
+                <NavLink to={returnLink}>
                     <Logo size="h6" />
                 </NavLink>
             </div>

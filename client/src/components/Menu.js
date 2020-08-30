@@ -4,24 +4,40 @@ import { Grid } from '@material-ui/core';
 import classes from './Menu.module.css';
 import { NavLink, Link } from 'react-router-dom';
 
-const menu = () => {
+const mainMenu = () => {
+
+    const linkList = [
+        {route: "/play", name: "New Game"},
+        {route: "/settings", name: "Settings"},
+        {route: "/instructions", name: "How to Play"}
+    ]
+
+    return (
+        <MenuWrapper links={linkList} />
+    );
+}
+
+export const MenuWrapper = props => {
+
+    const links = props.links.map((linkItem) => {
+        return (
+            <li className={classes.menuItem}>
+                <NavLink to={linkItem.route}>{linkItem.name}</NavLink>
+            </li>
+        );
+    })
+
     return (
         <div class="app-wrap">
             <Grid container className="full-height">
                 <Grid item xs={12} className={classes.initBox}>
-                    <Logo size="h5" classes={classes.menuLogo} />
+                    <NavLink to="/">
+                        <Logo size="h5" classes={classes.menuLogo} />
+                    </NavLink>
                 </Grid>
                 <Grid item xs={12} className={classes.initBox}>
                     <ul className={classes.itemList}>
-                        <li className={classes.menuItem}>
-                            <NavLink to="/play">New Game</NavLink>
-                        </li>
-                        <li className={classes.menuItem}>
-                            <NavLink to="/settings">Settings</NavLink>
-                        </li>
-                        <li className={classes.menuItem}>
-                            <NavLink to="/instructions">How to Play</NavLink>
-                        </li>
+                        {links}
                     </ul>
                 </Grid>
             </Grid>
@@ -29,4 +45,4 @@ const menu = () => {
     );
 }
 
-export default menu;
+export default mainMenu;
