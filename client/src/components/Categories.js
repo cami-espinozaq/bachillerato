@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Categories.module.css';
-import parrot from '../assets/images/parrot-opt.svg';
+import { ReactComponent as Parrot } from '../assets/images/parrot-opt3.svg';
 import { Grid, Typography } from '@material-ui/core';
 
 import Wrapper from '../UI/Wrapper';
@@ -12,7 +12,7 @@ const Category = props => {
     return (
         <div className={style}>
             <Typography variant="h4">Animals</Typography>
-            <img className={classes.image} src={parrot} />
+            <Parrot />
         </div>
     )
 };
