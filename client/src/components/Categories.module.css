@@ -1,12 +1,28 @@
 .block {
     width: 300px;
     height: 120px;
-    border: mediumblue 1px solid;
+    border: 1px solid #9EF0FF;
     border-radius: 8px;
-    box-shadow: 0 0 15px mediumblue;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    box-shadow:
+    0 0 0.1vw  0.4vw #D1FFFF,   
+    0 0 0.4vw  0.6vw #B8FFFF, 
+    0 0   4vw  0.4vw #9EF0FF,
+    inset 0 0 1.5vw  0.4vw #D1FFFF,
+    inset 0 0 0.4vw  0.2vw #B8FFFF,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+}
+
+.block:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+    color: #9EF0FF;
+    filter: blur(15px);
 }
 
 .image {

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Categories.module.css';
-import { ReactComponent as Parrot } from '../assets/images/parrot-opt3.svg';
+import { ReactComponent as Parrot } from '../assets/images/parrot-opt-group.svg';
 import { Grid, Typography } from '@material-ui/core';
 
 import Wrapper from '../UI/Wrapper';
