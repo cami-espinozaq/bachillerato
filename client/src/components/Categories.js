@@ -22,9 +22,7 @@ const categories = props => {
         <Wrapper logoLink="/settings">
             <Grid container spacing={6}>
                 <Grid item xs={12} md={4}>
-                    <div>
-                        <Category color={classes.blockCyan}></Category>
-                    </div>
+                    <Category color={classes.blockCyan}></Category>
                 </Grid>
             </Grid>
         </Wrapper>
