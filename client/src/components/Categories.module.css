@@ -5,35 +5,45 @@
     display: flex;
     align-items: flex-end;
     overflow: hidden;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.cyan {
+    color: #D1FFFF;
+    text-shadow: 0 0 10px #9EF0FF;
     box-shadow:
     0 0 1px  1px #D1FFFF,   
-    0 0 12px  1px #9EF0FF,
-    inset 0 0 12px  1px #D1FFFF,
+    0 0 8px  1px #9EF0FF,
+    inset 0 0 8px  1px #D1FFFF,
     inset 0 0 1px  1px #9EF0FF;
 }
 
-.block svg {
-    transform: scale(0.5);
-    align-self: center;
+.purple {
+    color: #997EFF;
+    text-shadow: 0 0 10px #664BE8;
+    box-shadow:
+    0 0 1px  1px #997EFF,   
+    0 0 8px  1px #664BE8,
+    inset 0 0 8px  1px #997EFF,
+    inset 0 0 1px  1px #664BE8;
 }
 
-.blockCyan {
-    color: #D1FFFF;
-    text-shadow: 0 0 10px #9EF0FF;
+.fuccia {
+    color: #FF7FFF;
+    text-shadow: 0 0 10px #FF0099;
+    box-shadow:
+    0 0 1px  1px #FF7FFF,   
+    0 0 8px  1px #FF0099,
+    inset 0 0 8px  1px #FF7FFF,
+    inset 0 0 1px  1px #FF0099;
 }
 
-.blockPurple {
-    border-color: #664BE8;
-    color: #664BE8;
-}
-
-.blockFuccia {
-    border-color: #FF0099;
-    color: #FF0099;
-}
-
-.blockOrange {
-    border-color: #E8742B;
-    color: #E8742B;
+.orange {
+    color: #FFC178;
+    text-shadow: 0 0 10px #E8742B;
+    box-shadow:
+    0 0 1px  1px #FFC178,   
+    0 0 8px  1px #E8742B,
+    inset 0 0 8px  1px #FFC178,
+    inset 0 0 1px  1px #E8742B;
 }
