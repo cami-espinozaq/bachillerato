@@ -5,6 +5,8 @@ import { ReactComponent as Music } from '../assets/images/music-neon-opt.svg';
 import { ReactComponent as Fruit } from '../assets/images/pineapple-opt.svg';
 import { ReactComponent as World } from '../assets/images/world1-opt.svg';
 import { ReactComponent as People } from '../assets/images/avatar-opt.svg';
+import { ReactComponent as Movie } from '../assets/images/movie-opt.svg';
+import { ReactComponent as Cart } from '../assets/images/shopping-cart-opt.svg';
 import { Grid, Typography } from '@material-ui/core';
 
 import Wrapper from '../UI/Wrapper';
@@ -22,7 +24,9 @@ const Category = props => {
         'music': <Music />,
         'fruits': <Fruit />,
         'countries': <World />,
-        'celebrities': <People />
+        'celebrities': <People />,
+        'movies': <Movie />,
+        'brands': <Cart />
     }
     const style = `${classes.block} ${colorClass[props.color]}`;
 
@@ -37,11 +41,12 @@ const Category = props => {
 const categories = props => {
 
     const colors = ['cyan', 'purple', 'fuccia', 'orange'];
-    const categoryList = ['Animals', 'Music', 'Fruits', 'Countries', 'Celebrities'];
+    const categoryList = ['Animals', 'Music', 'Fruits', 'Countries', 'Movies', 'Brands', 'Celebrities'];
 
     let categories = categoryList.map((name, index) => {
         const colorIndex = index % 4;
-        return <Category color={colors[colorIndex]} name={name} />
+
+        return <Category color={colors[colorIndex]} name={name} key={`category_${index}`} />
     });
 
     return (

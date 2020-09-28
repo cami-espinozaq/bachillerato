@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from '../UI/Logo';
 import { Grid } from '@material-ui/core';
 import classes from './Menu.module.css';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const mainMenu = () => {
 
@@ -20,15 +20,17 @@ const mainMenu = () => {
 export const MenuWrapper = props => {
 
     const links = props.links.map((linkItem) => {
+        const key = linkItem.name.toLowerCase().replace(/ /g, "-");
+
         return (
-            <li className={classes.menuItem}>
+            <li className={classes.menuItem} key={key}>
                 <NavLink to={linkItem.route}>{linkItem.name}</NavLink>
             </li>
         );
     })
 
     return (
-        <div class="app-wrap">
+        <div className="app-wrap">
             <Grid container className="full-height">
                 <Grid item xs={12} className={classes.initBox}>
                     <NavLink to="/">

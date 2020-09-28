@@ -8,7 +8,7 @@ const wrapper = props => {
     const returnLink = props.logoLink || "/";
 
     return (
-        <div class="app-wrap">
+        <div className="app-wrap">
             <div className={classes.logoWrapper}>
                 <NavLink to={returnLink}>
                     <Logo size="h6" />
